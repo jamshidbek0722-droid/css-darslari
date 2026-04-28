@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>15-dars. Display_ xossasi</title>
+        <link rel="stylesheet" href=".//css/main.css">
+        <style>
+            /*Blok elementlar <div> <h1> <h2>..<h6>, <ul>, <ol>, <il>
+                inline elementlar <a>, <span>...*/
+            .heding-1 {
+                background-color: red;
+                display: inline; /*Blok elementni inline ga o'tkzidi*/
+            }
+            .link {
+                background-color: yellow;
+                
+                display: block; /*Inline elementni blok 
+                elementga almashtirdi. Inline elementlar yonma yon bo'ladi
+                 va nacground colorda faqat o'zi turgan joyni egallaydi. 
+                 Blok elementlar esa oyna bo'yicha hamma kenglikni egallaydi*/
+
+            }
+            .to-inline-block {
+                background-color: red;
+                display: inline-block;
+                width: 300px;
+                height: 150px;
+            }
+            .to-none {
+                display: none; /*shu class ostidagi elementni ekrandan yashiradi.*/
+            }
+        </style>
+    </head>
+    <body>
+        <!--Blok elementga misollar-->
+        <h1 class="heding-1">Sarlavha </h1>
+        <h2>Sarlavha</h2>
+        <!-- /Blok elementga misollar-->
+
+        <a href="#" class="link">Ilova 1</a> <br>
+        <a href="#" class="link">Ilova 2</a> <br> <br>
+
+        <span class="to-inline-block">
+            Inline blok elementga aylantirish
+        </span>
+
+        <span class="to-none">Bu element ekranda ko'rinmaydi</span>
+    </body>
+</html>

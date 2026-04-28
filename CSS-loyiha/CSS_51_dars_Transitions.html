@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>51-dars. Transitions</title>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <meta name="viewport" content="width=devise-width, initial-scale=1">
+        <style>
+            .box-1 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 2s;
+            }
+            .box-1:hover {
+                width: 400px;
+            }
+
+
+
+            .box-2 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 2s, background-color 4s;
+            }
+            .box-2:hover {
+                width: 400px;
+                background-color: green;
+            }
+
+
+
+            .box-3 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: all 3s; /* hamma hossalarini 2sda o'zgartiruvchi quti*/
+            }
+            .box-3:hover {
+                width: 400px;
+                height: 400px;
+                background-color: blue;
+                border: 5px solid yellow;
+                font-style: italic;
+                font-style: bold;
+                font-size: 50px;
+            }
+
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 2s;
+                margin-bottom: 20px;
+            }
+            .box:hover {
+                width: 400px;
+            }
+
+            .ease {
+                transition-timing-function: ease;
+            }
+
+            .liner {
+                transition-timing-function: linear;
+            }
+
+            .ease-in {
+                transition-timing-function: ease-in;
+            }
+
+            .ease-out {
+                transition-timing-function: ease-out;
+            }
+
+            .ease-in-out {
+                transition-timing-function: ease-in-out;
+            }
+
+            .cubic-bezier {
+                transition-timing-function: cubic-bezier(0.25, 0.1, 0.19, 1.46);
+            }
+
+            .box-4 {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 2s, border-radius 3s;
+                transition-delay: 2s;
+            }
+            .box-4:hover {
+                width: 400px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <hr><div class="box-4">Sichqoncha olib borilganda 2s dan so'ng effekt ishga tushadi</div>
+        <hr><div class="box ease">Ease effektimiz sekin boshlanib keyin tezlashib yana sekinlik bilan tugaydi</div>
+        <hr><div class="box linear">Linear- effektimiz ko'rsatilgan vaqt davomida bir xil tezlikda bo'ladi </div>
+        <hr><div class="box ease-in">Ease in - effektimiz sekin boshlanadi</div>
+        <hr><div class="box ease-out">Ease out- effektimiz sekin tugaydi</div>
+        <hr><div class="box ease-in-out">Ease in out - effektimiz sekin boshlanib va sekin tugaydi</div>
+        <hr><div class="box cubic-bezier">Cubic bezier - cubic-bezier funksiyasi orqali, ko'rsatilgan egri chiziq</div> 
+        <hr><div class="box-3">Sichqoncha olib borilganda hamma hossalarini ravon o'zgartiruvchi quti</div>
+        <hr><div class="box-2">Sichqoncha olib borilganda o'z kengligi va rangini ravon o'zgartiruvchi quti</div>
+        <hr><div class="box-1">
+            Sichqonch olib borganda o'z kengligini ravon o'zgartiruvchi quti
+        </div>
+    </body>
+</html> 

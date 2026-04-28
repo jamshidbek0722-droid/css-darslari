@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>27-dars. Styling image</title>
+        <link rel="stylesheet" href=".//css/main.css">
+        <style>
+            .rounded-image {
+                border-radius: 24px;
+            }
+
+            .circle-image {
+                border-radius: 50%;
+                width: 400px;
+                height: 400px;
+            }
+
+            .thumbnail-image {
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 5px
+            }
+
+            .opacity-image {
+                opacity: 0.5;
+            }
+
+            .opacity-image:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./image/sample-image.png" alt="rounded image" class="rounded-image">
+        <img src="./image/sample-image.png" alt="circle image" class="circle-image"> <br>
+        <img src="./image/sample-image.png" alt="Thumbnail image" class="thumbnail-image"> <br>
+        <img src="./image/sample-image.png" alt="Opacity image" class="opacity-image">
+    </body>
+</html>

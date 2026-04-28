@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>57-dars. Flexbox_-_align-items_va_align-content</title>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <meta name="viewport" content="width=devise-width, initial-scale=1">
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .flex-container {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-item {
+                padding: 60px 15px;
+                background-color: #fde8cd;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .order-minus-5 {
+                order: -5;
+            }
+
+            .order-1 {
+                order: 1;
+            }
+
+            .order-10 {
+                order: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item order-10">Flex item 1 (order: 10)</div>
+            <div class="flex-item order-1">Flex item 2 (order: 1)</div>
+            <div class="flex-item order-minus-5">Flex item 3 (order: -5)</div>
+            <div class="flex-item">Flex item 4 (order: 0 defoult)</div>
+        </div>
+    </body>
+</html> 

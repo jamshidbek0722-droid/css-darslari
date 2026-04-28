@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <title>37-dars. Viewport O'lcho'v birligi</title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <style>
+            /*viewportning % dan faqri shundaki foiz ota-ona yoki ajdodga nisbatan hisoblasa, wiewport esa brazuerning viewportiag nisbatan hisobladi*/
+            /*vh viewportning balandligiga nisbatan hisoblanadi*/
+            /* vmin va vmax viewportning balandligi va kengligidan eng kichigi yoki eng kattasiga nisbatan foizda hisoblab ko'rasatiladi */
+            .box-1 {
+                height: 200px;
+                width: 50vw; /*viewporting 50foizi*/
+                padding: 5vw;
+                background-color: yellow;
+            }
+
+            .parent-box {
+                width: 50%;
+                background-color: red;
+                height: 200px;
+            }
+            .box-2 {
+                width: 100vw; /*% va vw ni qo'yib tekshir*/
+                background-color: aqua;
+                height: 150px;
+            }
+
+            .box-3 {
+                height: 50vh;
+                width: 50vw;
+                background-color: blueviolet;
+            }
+
+            .box-4 {
+                height: 100vh;
+                width: 100vw;
+                background-color: antiquewhite;
+            }
+
+            .box-5 {
+                height: 100px;
+                width: 50vmin;
+                background-color: rebeccapurple;
+            }
+
+            .box-6 {
+                height: 100px;
+                width: 50vmax;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <hr><div class="box-6">vmax o'lcho'v birligi uchu misol</div>
+
+        <hr><div class="box-5">vmin o'lcho'v birligi uchu misol</div>
+
+        <hr><div class="box-4">Sahifamizning to'liq kengligi va balandligiga ega quti</div>
+        <h1>Quti ostidagi sarlavha</h1>
+
+        <hr><div class="box-3">Viewport birligi yordamida ko'rsatilgan qiymatlarga ega quti</div>
+
+        <hr><div class="parent-box">
+            <div class="box-2">
+                Parent box ichidagi quti
+            </div>
+        </div>
+
+        <hr><div class="box-1">Viewport birigi yordamida ko'rsatilgan qiymatlarga ega quti</div>
+    </body>
+</html>

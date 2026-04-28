@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>28-dars. Gradiyet va filterlar</title>
+        <link rel="stylesheet" href=".//css/main.css">
+    </head>
+    <style>
+        .gradient-box {
+            width: 600px;
+            height: 800px;
+            background-image: linear-gradient(to right, red, blue);
+        }
+
+        .radial-gradient-box {
+            width: 600px;
+            height: 800px;
+            background-image: radial-gradient(circle, red, yellow, blue);
+        }
+        
+        .blur {
+            filter: blur(5px); /*Rasmni hiralashtiradi*/
+        }
+
+        .brightness {
+            filter: brightness(0.5); /*Rasmni yorqinligiga javob beradi*/
+        }
+
+        .contrast {
+            filter: contrast(0.5); /*hira va eskidek ko'rsatatdi*/
+        }
+
+        .grascale {
+            filter: grayscale(1); /*Rasmni kulrang qilib beradi*/
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(180deg); /*rasmdagi rang aylanishiga javob beradi*/
+        }
+
+        .invert {
+            filter: invert(100%); /*Qorong'uda ko'rsatadigan kamera kabi olar ekan*/
+        }
+
+        .opacity {
+            filter: opacity(50%); /*Rasmni ko'rinarlilik darajasi*/
+        }
+    </style>
+    <body>
+        <div class="gradient-box"></div> <br>
+        <div class="radial-gradient-box"></div>
+
+        <img src="./image/sample-image.png" alt="Blur image" class="blur"> <br>
+        <img src="./image/sample-image.png" alt="brightness image" class="brightness"> <br>
+        <img src="./image/sample-image.png" alt="contrast image" class="contrast"> <br>
+        <img src="./image/sample-image.png" alt="grascale image" class="grascale"> <br>
+        <img src="./image/sample-image.png" alt="hue-rotate image" class="hue-rotate"> <br>
+        <img src="./image/sample-image.png" alt="invert image" class="invert"> <br>
+         <img src="./image/sample-image.png" alt="opacity image" class="opacity"> <br>
+    </body>
+</html>

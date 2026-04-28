@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <title>36-dars. rem O'lcho'v birligi</title>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <!--
+        < >
+            .box-1 {
+                height: 600px;
+                width: 1000px;
+                border: 1px solid red;
+                font-size: 1rem;
+                border-radius: 0.5rem;
+                padding: 5rem;
+            }
+
+            htl {
+                font-size: 32px;
+            }
+            .box-2 {
+                height: 600px;
+                width: 1000px;
+                border: 1px solid red;
+                font-size: 1rem; /* html elemetntimizdan 32px ni olib 1ga ko'paytiradi, biz o'lcho'v berganimiz uchun saytning 16px ini olmasdan biz kiritganni oldi */
+                border-radius: 0.5rem; /* 0.5rem*32px=16px */
+                padding: 5rem; /* 5rem*32px=160px */
+            }
+
+            .parent-box {
+                font-size: 1.5rem;
+            }
+            .child-box {
+                font-size: 2rem;
+            }
+            .box-3 {
+                height: 600px;
+                width: 1000px;
+                border: 1px solid red;
+                font-size: 1rem;
+                border-radius: 0.5rem; /* bu holatda elementimiz ota-onasidan emas to'g'tidan to'g'ri htm elementdan oladi font-sizeni. agar "em" dan foydalansan birinchi ota-onasidan, "rem" dan foydalansan htm dan oladi font-sizeni*/
+                padding: 5rem;
+            }
+        </ > -->
+        
+        <style>
+            .container {
+                font-size: 20px;
+                padding: 0.5em;
+                border: 1px solid red;
+            }
+
+            .container h2 {
+                font-size: 1.5em;
+                margin-bottom: 0.2em;
+            }
+
+            .container h6 {
+                font-size: 0.9em;
+                margin-top: 0.2em;
+            }
+
+            .container p {
+                font-size: 0.8em;
+            }
+
+            .container span {
+                font-size: 0.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Sarlavhamiz</h2>
+            <h6>Sarlavha osti</h6>
+            <p>
+                djkjdnckjndckjnsdkcnkcn ddcnkdnckdnc dcnk kj k jn j kj skj skj skj ksjj 
+                <span>
+                    A simple text 
+                </span>
+            </p>
+        </div>
+
+        <!--
+        <div class="parent-box">
+            <div class="child-box">
+                <div class="box-3">Elementlarimiz nested(ichma-ich) holatda joylashganda</div>
+            </div>
+        </div>
+
+        <div class="box-2">html elementimiz uchun font size hossasi ko'rastilganda</div>
+
+        <div class="box-1">html elementimiz font-size hossasiga ega bo'lmaganda</div>
+        -->
+    </body>
+</html>

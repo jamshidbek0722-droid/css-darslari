@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>23-dars. Absolutu va sticky</title>
+        <style>
+            /*
+            .relative-box {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border: 5px solid red;
+            }
+
+            .absolute-box {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                width: 50px;
+                height: 100px;
+                border: 5px solid blue;
+            } */
+            .sticky-box {
+                position: sticky;
+                top: 20px; /*Skrolni pastga tushir ko'rasan. Element tepadan 20px joy qolgandan boshlab o'zini fixed kabi tutadi. Tepada qolib ketadi*/
+                width: 200px;
+                height: 200px;
+                border: 5px solid red;
+            }
+
+            .high-box {
+                height: 10000px;
+                border: 5px solid blue;
+            }
+        </style>
+    </head>
+    <body> <!--
+        <div class="relative-box">Bu qutimiz statik qiymatdan boshqa qiymatga ega
+            <div class="absolute-box">Bu qutimiz absolyut qiymatga ega</div>
+        </div> -->
+        <h1>Sticky qiymatiga misol</h1>
+        <div class="sticky-box">Sticky qiymatiga ega quti</div>
+        <div class="high-box">
+            Katta balandlikka ega quti
+        </div>
+    </body>
+</html> 

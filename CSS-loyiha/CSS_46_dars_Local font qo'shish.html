@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>46-dars. Local font qo'shish</title>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <meta name="viewport" content="width=devise-width, initial-scale=1">
+        <style>
+            @font-face {
+                font-family: 'lato';
+                src: url('./fonts/lato/Lato-BoldItalic.ttf');
+            }
+
+            @font-face {
+                font-family: 'roboto';
+                src: url('./fonts/roboto/README.txt');
+            }
+
+            p {
+                font-family: 'lato'; /* yuqorida faylga qo'shilgan font orqali bu fontn fayldan topib sayt shu fontda ishga tushadi*/
+            }
+
+            .roboto {
+                font-family: 'roboto';
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="roboto">Roboto ga ega bo'lgan sarlavha</h1>
+        <hr><h1>Sarlavha</h1>
+        <p>
+            paragraf uchun element
+        </p>
+    </body>
+</html> 

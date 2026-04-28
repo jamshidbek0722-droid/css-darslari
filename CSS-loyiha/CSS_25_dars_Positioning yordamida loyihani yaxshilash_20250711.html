@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>25-dars. Positioning yordamida loyihani yaxshilash</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="stylesheet" href=".//css/main.css">
+        <style>
+                        /*Core styles*/
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.to-uppercase {
+    text-transform: uppercase;
+}
+.clearfix {
+    clear: both;
+}
+
+.section-subtitle {
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #797979;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 5px;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #05364d;
+}
+
+.button {
+    border: none;
+    background-color: #1C44E4;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*Main header styles*/
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 10;
+}
+
+.main-header__brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand img {
+    width: 64px;
+}
+
+.main-navigation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-navigation__item {
+    display: inline-block;
+    padding: 10px;
+}
+
+.main-navigation__item a {
+    color: #05364d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+} 
+
+.main-navigation__item a:hover {
+    color: #efb6df;
+}
+
+.main-navigation__item.active a {
+     color: ;
+}
+.main-section {
+
+}
+
+/*Main section */
+.main-section {
+    padding: 100px 30px;
+    display: flex;
+    align-items: center; /* Matn va rasm balandligini tenglashtiradi */
+    justify-content: space-between; /* Matn va rasm orasida bo‘sh joy bo‘ladi */
+}
+
+.main-section > div {
+    gap: 10px;
+    width: 50%;
+    float: left ; 
+}
+
+.main-section__image img {
+    width: 250px;
+    height: auto;
+    text-align: right;
+    /*
+    transform: scale(0.5);
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    */
+}
+
+.main-section__welcome {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #797979;
+}
+
+.main-section__introduction {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #05364E;
+}
+.main-section__position {
+    color: #05364E;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main-section__social-networks a {
+    color: #8FA1AA;
+    font-style: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.main-section__social-networks a:hover i {
+    color: #1C44E4;
+}
+.main-section__action {
+    margin-top: 30px;
+}
+
+/*statistics section*/
+.statistics {
+    padding-top: 100px;
+}
+
+.statistics__item {
+    width: 150px;
+    display: inline-block;
+    background-color: #FBFAFF;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.statistics__number {
+    font-size: 27px;
+    margin-bottom: 5px;
+    color: #1C44E4;
+}
+
+.statistics__title {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 300;
+}
+
+/*About me section*/
+.about-me {
+    padding: 100px;
+}
+
+.about-me > div {
+    width: 50%;
+    float: left;
+}
+
+.about-me__image img {
+    width: 50%;
+    height: 390px;
+}
+
+
+.about-me__description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #797979;
+    line-height: 27px;
+}
+.blur-line {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+    width: 80px;
+    height: 4px;
+    background-color: rgba(237,35,159,0.6);
+    filter: blur(4px);
+    border-radius: 5px;
+}
+
+.about-me__action{
+    margin-top: 40px;
+}
+
+/*Servicies section style*/
+.services {
+    padding-top: 100px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    background-color: #F8FAFF;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.img2 {
+    height: 165px;
+}
+
+.img3 {
+    height: 165px;
+}
+
+.service-card__title {
+    color: #05364D;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.service-card__description {
+     font-size: 14px;
+     line-height: 27px;
+     font-weight: 300;
+     color: #797979;
+}
+
+.service-card__link {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364D;
+    text-decoration: none;
+}
+
+.service-card:hover {
+    background-color: #5F30ff;
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__description,
+.service-card:hover .service-card__link {
+    color: #FFFFFF;
+} 
+
+/*My cliets sectiond styles*/
+.clients {
+    padding-top: 100px;
+}
+
+.client-item > div {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.client-item__image img {
+    width: 100%;
+}
+
+.client-item__info {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.client-item__name {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.clietn-item__position  {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.client-item__review {
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.client-item__rate {
+    color: #FFD805;
+}
+
+.client-item__rate .disabled {
+    color: #AEB9BE;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    padding: 100px 0;
+}
+
+.portfolio-filters {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.portfolio-filters li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-filters li:hover {
+    color: #1345e6;
+}
+
+.portfolio-filters li.active {
+    color: #1345e6;
+}
+
+.portfolio-items {
+    position: relative;
+    margin-top: 50px;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item-1 {
+    padding-left: 0;
+}
+
+.portfolio-item-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.portfolio-item-3 {
+    position: absolute;
+    top: 322px;
+    right: 0;
+}
+
+.portfolio-item__image {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(19,69,230,0.9);
+    visibility: hidden;
+    z-index: 1;
+} 
+
+.portfolio-item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info a {
+    color: white; 
+    text-decoration: none;
+}
+
+.portfolio-item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+}
+        </style>
+    </head>
+    <body>
+        <!--Header section-->
+        <header class="main-header">
+            <div class="container">
+            <div class="main-header__brand">
+                <a href="index.html">
+                    <img src="./image/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item active">
+                        <a href="#">Asosiy</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li class="main-navigation__item">
+                         <a href="#">Xizmatlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <!--/ Header section-->
+
+        <!--Main Section-->
+        <div>
+         <section id="main-section" class="main-section">
+        <div class="main-section__info">
+            <h4 class="main-section__welcome to-uppercase">Salom hammaga</h4>
+            <h1 class="main-section__introduction to-uppercase">I am Jamshidbek0722</h1>
+            <h3 class="main-section__position to-uppercase">Senior (katta) dasturchi & Vlogger</h3>
+            <div class="main-section__social-networks">
+                <a href="https://t.me/Jamshidbek0722">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://youtube.com/Jamshdibek0722">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/Jamshidbek0722">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <button type="button" class="button main-section__action to-uppercase">
+                Ishlarimni ko'ring
+            </button>
+        </div>
+        <div class="main-section__image">
+            <img src="./image/me.png" alt="My Image">
+        </div>
+        </section>
+        <div class="clearfix"></div> 
+        </div>
+        
+        <!--/ Mani section-->
+
+        <!--Statistics-->
+        <div class="container">
+            <section id="statistics" class="statistics">
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        15k+
+                    </h3>
+                    <p class="statistics__title">
+                        Hursand mijozlar
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        12k+
+                    </h3>
+                    <p class="statistics__title">
+                        Yordam 
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        9/10
+                    </h3>
+                    <p class="statistics__title">
+                        O'rtacha yordam
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!--/statistics-->
+
+        <!--About me section-->
+        <div class="container">
+            <section id="about_me" class="about-me">
+            <div class="about-me__image" alt="About me image">
+                <img src="./image/about-me.png">
+            </div>
+            <div class="about-me__info">
+                <h5 class="section-subtitle">
+                    Men haqimda
+                    <span class="blur-line"></span>
+                </h5>
+                <h3 class="section-title">
+                    Senior (katta) dasturchi
+                </h3>
+                <p class="about-me__description">
+                    Men Irkinbayev Jamshidbekman. Namangan viloyatida tug'ulganman. 
+                    Bo'sh vaqtlarimda dasturlash va ingliz tilinni o'rganyapman, kelajakta senior (katta) daturchi bo'lish niyatim bor
+                </p>
+                <button type="button" class="button to-uppercase about-me__action">
+                    CV ko'chirib olish
+                </button>
+            </div>
+        </section>
+        </div>
+        <div class="clearfix"></div>
+        <!--/About me section-->
+
+        <!-- Servise section -->
+        <div class="container">
+            <section id="services" class="services">
+            <h5 class="section-subtitle">
+                Mening xizmatlarim
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                Men taklif <br>
+                Qiladigan xizmatlar
+            </h2>
+            <div class="service__cards">
+                <div class="service-card">
+                    <img class="service" src="./image/service-1.png" alt="service-1">
+                    <h5 class="service-card__title">Veb dasturlash</h5>
+                    <p class="service-card__description">
+                        Savollaringizga to'liq javob va birinchi veb saytingizni yaratish uchun kerak bo'lgan barcha resurslar
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Ko'proq
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <img class="service img2" src="./image/service-2.png" alt="service-1">
+                    <h5 class="service-card__title">Veb dasturlash</h5>
+                    <p class="service-card__description">
+                        Savollaringizga to'liq javob va birinchi veb saytingizni yaratish uchun kerak bo'lgan barcha resurslar
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Ko'proq
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <img class="service img3" src="./image/service-3.png" alt="service-1">
+                    <h5 class="service-card__title">Veb dasturlash</h5>
+                    <p class="service-card__description">
+                        Savollaringizga to'liq javob va birinchi veb saytingizni yaratish uchun kerak bo'lgan barcha resurslar
+                    </p>
+                    <a href="#" class="service-card__link">
+                        Ko'proq
+                    </a>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- /Servise section -->
+
+        <!-- Clients -->
+         <div class="container">
+            <section id="clients" class="clients">
+            <h5 class="section-subtitle">
+                Mening mijozlarim
+                <span class="blur-line"></span>
+            </h5>
+            <h2 class="section-title">
+                Hurmatli mijozlarim <br>
+                men haqimda
+            </h2>
+            <div class="client-items">
+                <div class="client-item">
+                    <div class="client-item__image">
+                        <img src="./image/about-me.png" alt="Client image">
+                    </div>
+                    <div class="client-item__info">
+                        <h3 class="client-item__name">
+                            Muhammad Rasul <br>
+                            Nematxonov
+                        </h3>
+                        <p class="clietn-item__position">
+                            Senior (katta) dasturchi
+                        </p>
+                        <p class="client-item__review">
+                            Bu Jamshidbek0722 deganlari juda ham aqlli va intellektual bola ekan. Men uning mijozi bo'lganimdan faxrlanaman.<br> U kabi insonni yer yuzida kunduzi fanar topib qidirib topish ham mushkul. Jamshdibek0722 dek do'stim borligidan faxrlanaman
+                        </p>
+                        <div class="client-item__rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star disabled"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <div class="clearfix"></div>
+         </div>
+        <!-- /clients  -->
+
+        <!-- Portfolio section -->
+            <div class="container">
+            <section id="portfolio" class="portfolio">
+            <div class="section-subtitle">
+                Mening ishlarim
+                <span class="blur-line"></span>
+            </div>
+            <div class="section-title">
+                Mening oxirgi <br>
+                ishlarimni ko'ring
+            </div>
+            <ul class="portfolio-filters">
+                <li class="active">
+                    Hammasi
+                </li>
+                <li>
+                    Mashxurlari
+                </li>
+                <li>
+                    Oxirgilari
+                </li>
+            </ul>
+            <div class="portfolio-items">
+                <div class="portfolio-item portfolio-item-1">
+                    <img src="./image/portfolio-1.png" alt="portfolio image 1" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Portfolio item 1</a>
+                        </h4>
+                        <p>
+                            Ishim haqida
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-item-2">
+                    <img src="./image/portfolio-2.png" alt="portfolio image 2" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Portfolio item 2</a>
+                        </h4>
+                        <p>
+                            Ishim haqida
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item portfolio-item-3">
+                    <img src="./image/portfolio-3.png" alt="portfolio image 3" class="portfolio-item__image">
+                    <div class="portfolio-item__overlay"></div>
+                    <div class="portfolio-item__info">
+                        <h4>
+                            <a href="#">Portfolio item 3</a>
+                        </h4>
+                        <p>
+                            Ishim haqida
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+          </div>
+        <!-- /Porfolio section -->
+
+        <!-- Blog section-->
+         <section id="blog">
+            <h1>Blog</h1>
+         </section>
+         <!-- /Blog section -->
+        
+        <!--Partners section-->
+        <section id="partners">
+            <h1>Partners</h1>
+        </section>
+        <!-- /Partner section-->
+
+        <!--Footer section-->
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Asosiy</a>
+                    </li>
+                    <li>
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li>
+                         <a href="#">Xizmatlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Sheriklar</a>
+                    </li>
+                </ul>
+            </nav>            
+        </footer>
+        <!-- /Footer section-->       
+    </body>
+</html>

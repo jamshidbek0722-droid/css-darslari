@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>13-dars. Margin collapsing. Shorthands (Qisqartmalar)</title>
+        <link rel="stylesheet" href=".//css/main.css">
+        <style>
+            .box1 {
+                margin: 50px;
+                /* teap, past, o'ng va chap uchun alohida buyruqlarni bajarish
+                border-top: 5px solid purple;
+                border-bottom: 7px solid blue;
+                border-left: 10px solid red;
+                border-right: 20px solid yellow;
+                */
+
+                /* Margin uchun
+                margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 50px;
+                margin-left: 80px;
+                */
+
+
+                background-color: yellow;
+
+                
+                margin: 10px 20px; /*Birinchi yozganimiz tepa va pastiga, ikkinchisi o'ng va chapiga amal qiladi*/
+
+                margin: 10px 20px 30px; /*birinchi qiymat TOP uchun, ikkinchisi left va right uchun uchinchi bergan qiymatimiz bottom uchun amal qiladi*/
+
+                margin: 10px 20px 30px 40px; /* Top, right, bottom, left uchun amal qiladi har bir berilgan qiymatlar*/
+
+                /*huddi shu marging uchun yozilgan qoidalar padding uchun ham amal qiladi*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">Quti 1</div>
+        <div class="box2">Quti 2</div>
+    </body>
+</html>

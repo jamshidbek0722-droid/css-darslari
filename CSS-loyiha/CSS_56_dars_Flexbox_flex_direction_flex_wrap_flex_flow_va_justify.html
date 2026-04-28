@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>56-dars. Flexbox_flex_direction_flex_wrap_flex_flow_va_justify</title>
+        <meta name="viewport" content="width+devise-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <meta name="viewport" content="width=devise-width, initial-scale=1">
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            .flex-container-1 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: row; /* "row"=> flexboxni gorizontal holda qiladi va ichidagi elementlarni chapdan o'ngga qiladi */
+            }
+            .flex-item-1 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+                .flex-container-2 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: row-reverse; /* "row-reverse"=> flexboxni gorizontal holda qiladi va ichidagi elementlarni o'ngdan chapga qiladi */
+            }
+            .flex-item-2 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-container-3 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: column; /* "column"=> flexboxni vertikal holda qiladi va ichidagi elementlarni tepadan pastga */
+            }
+            .flex-item-3 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-container-4 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: column-reverse; /* "column-reverse"=> flexboxni vertikal holda qiladi va ichidagi elementlarni pastdan tepaga */
+            }
+            .flex-item-4 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+                .flex-container-5 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: row;
+                flex-wrap: nowrap; /*oyna toraysa elementlar kichrayib ketadi*/
+            } 
+            .flex-item-5 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-container-6 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: row;
+                flex-wrap: wrap; /*oyna toraysa elementlar keyingi qatorlarga joylashadi*/
+            }
+            .flex-item-6 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-container-7 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px;
+                flex-direction: row;
+                flex-wrap: wrap-reverse; /*oyna toraysa elementlar keyingi qatorlarga tesaridan joylashadi*/
+            }
+            .flex-item-7 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .flex-container-8 {
+                display: flex;
+                padding: 20px;
+                background-color: #025955;
+                border-radius: 10px; 
+                /* flex-direction: row;
+                flex-wrap: wrap-reverse; */
+                flex-flow: row nowrap; 
+            }
+            .flex-item-8 {
+                padding: 60px 15px;
+                background-color: #FDE8CD;
+                font-weight: bold;
+                margin: 10px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <hr><div class="flex-justify-content"> Elementlar oyna 
+
+        </div>
+
+        <hr><div class="flex-container-8"> flex-flow: now nowrap;
+            <div class="flex-item-8">Flex item 1</div>
+            <div class="flex-item-8">Flex item 2</div>
+            <div class="flex-item-8">Flex item 3</div>
+            <div class="flex-item-8">Flex item 4</div>
+            <div class="flex-item-8">Flex item 5</div>
+            <div class="flex-item-8">Flex item 6</div>
+            <div class="flex-item-8">Flex item 7</div>
+        <hr></div>
+
+        <hr><div class="flex-container-7"> flex-wrap: wrap-reverse;
+            <div class="flex-item-7">Flex item 1</div>
+            <div class="flex-item-7">Flex item 2</div>
+            <div class="flex-item-7">Flex item 3</div>
+            <div class="flex-item-7">Flex item 4</div>
+            <div class="flex-item-7">Flex item 5</div>
+            <div class="flex-item-7">Flex item 6</div>
+            <div class="flex-item-7">Flex item 7</div>
+        <hr></div>
+
+        <hr><div class="flex-container-6"> flex-wrap: wrap;
+            <div class="flex-item-6">Flex item 1</div>
+            <div class="flex-item-6">Flex item 2</div>
+            <div class="flex-item-6">Flex item 3</div>
+            <div class="flex-item-6">Flex item 4</div>
+            <div class="flex-item-6">Flex item 5</div>
+            <div class="flex-item-6">Flex item 6</div>
+            <div class="flex-item-6">Flex item 7</div>
+        <hr></div>
+
+        <hr><div class="flex-container-5"> flex-wrap: nowrap;
+            <div class="flex-item-5">Flex item 1</div>
+            <div class="flex-item-5">Flex item 2</div>
+            <div class="flex-item-5">Flex item 3</div>
+            <div class="flex-item-5">Flex item 4</div>
+            <div class="flex-item-5">Flex item 5</div>
+            <div class="flex-item-5">Flex item 6</div>
+            <div class="flex-item-5">Flex item 7</div>
+        <hr></div>
+
+        <hr><div class="flex-container-4"> column qiymat vertikal va elementlar pastdan tepaga
+            <div class="flex-item-4">Flex item 1</div>
+            <div class="flex-item-4">Flex item 2</div>
+            <div class="flex-item-4">Flex item 3</div>
+        <hr></div>
+
+        <hr><div class="flex-container-3"> column qiymat vertikal va elementlar tepadan pastga
+            <div class="flex-item-3">Flex item 1</div>
+            <div class="flex-item-3">Flex item 2</div>
+            <div class="flex-item-3">Flex item 3</div>
+        <hr></div>
+
+
+        <hr><div class="flex-container-2"> row-reverse qiymat, o'ngdan chapga
+            <div class="flex-item-2">Flex item 1</div>
+            <div class="flex-item-2">Flex item 2</div>
+            <div class="flex-item-2">Flex item 3</div>
+        <hr></div>
+
+        <hr><div class="flex-container-1"> row qiymat ya'ni defolt qiymat chapdan o'ngga
+            <div class="flex-item-1">Flex item 1</div>
+            <div class="flex-item-1">Flex item 2</div>
+            <div class="flex-item-1">Flex item 3</div>
+        <hr></div>
+    </body>
+</html> 
